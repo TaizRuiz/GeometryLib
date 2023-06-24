@@ -72,14 +72,6 @@ public class Line {
         return Math.abs(getY(p.getX()) - p.getY()) < 0.0000001;
     }
 
-    public Double getX(Number y) {
-        return (y.doubleValue() - b) / a;
-    }
-
-    public Double getY(Number x) {
-        return a * x.doubleValue() + b;
-    }
-
     public Point getPointFromX(Number x) {
         return new Point(x, this.getY(x));
     }

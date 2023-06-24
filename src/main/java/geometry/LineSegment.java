@@ -4,7 +4,7 @@ package geometry;
  *
  * @author Douglas Maitelli
  */
-public class LineSegment extends Line {
+public class LineSegment extends Line implements positionI {
 
     private Point p1;
     private Point p2;
